@@ -1,24 +1,33 @@
+
 """Filter out stopwords for word cloud"""
 
 import sys
 import nltk
-from nltk.corpus import stopwords
+try:
+    from nltk.corpus import stopwords
+except LookupError:
+    nltk.download('stopwords')
+    from nltk.corpus import stopwords
 
 sw = stopwords.words("french")
 sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont", "tout",
        "ils", "bien", "sans", "peut", "tous", "après", "ainsi", "donc", "cet", "sous",
        "celle", "entre", "encore", "toutes", "pendant", "moins", "dire", "cela", "non",
        "faut", "trois", "aussi", "dit", "avoir", "doit", "contre", "depuis", "autres",
-       "van", "het", "autre", "jusqu", "vers", "quelque", "car", "quel", "abord", "parce", "leurs", "chez",
-       "aucun", "alors", "auquel", "tandis", "quand", "devons", "donne", "telles"]
+       "van", "het", "autre", "jusqu", "vers", "quelque", "car", "quel", "abord", "parce", 
+       "leurs", "chez", "aucun", "alors", "auquel", "tandis", "quand", "devons", "donne", 
+       "telles", "toujours", "seulement", "pourra", "cependant", "plusieurs", "elles", 
+       "déjà", "très", "lorsque", "trouve", "crois", "toute", "faite", "ans", "celles"
+       "celui", "quelques", "laquelle", "faites", "tel", "etc", "devront", "chaque", "agit"
+       "mettre", "ceux", "pourront", "avant", "prendre", "aucune", "peu", "fera", "également"]
 sw = set(sw)
 
 
-def filtering(year):
-    path = f"{year}.txt"
-    output = open(f"{year}_keywords.txt", "w")
+def filtering(dpath, year):
+    path = f"{dpath}/{year}.txt"
+    output = open(f"{dpath}/{year}_keywords.txt", "w", encoding='utf-8')
 
-    with open(path) as f:
+    with open(path, encoding='utf-8') as f:
         text = f.read()
         words = nltk.wordpunct_tokenize(text)
         kept = [w.lower() for w in words if len(
@@ -28,5 +37,6 @@ def filtering(year):
 
 
 if __name__ == '__main__':
-    year = sys.argv[1]
-    filtering(year)
+    data_path = sys.argv[1]
+    chosen_year = sys.argv[2]
+    filtering(data_path, chosen_year)
