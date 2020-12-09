@@ -19,7 +19,8 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
        "déjà", "très", "lorsque", "trouve", "crois", "toute", "faite", "ans", "celles"
        "celui", "quelques", "laquelle", "faites", "tel", "etc", "devront", "chaque", "agit"
        "mettre", "ceux", "pourront", "avant", "prendre", "aucune", "peu", "fera", "également"
-       "celles", "dessus", "devant", "beaucoup", "rue", "échevin", "echevin"]
+       "celles", "dessus", "devant", "beaucoup", "rue", "échevin", "echevin", "conseil"
+       "conseil_communal", "bruxelles", "propose"]
 sw = set(sw)
 
 
