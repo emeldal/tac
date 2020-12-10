@@ -16,15 +16,16 @@ sw += ["les", "plus", "cette", "fait", "faire", "être", "deux", "comme", "dont"
        "van", "het", "autre", "jusqu", "ville", "vers", "quelque", "car", "quel", "abord", "parce", 
        "leurs", "chez", "aucun", "alors", "auquel", "tandis", "quand", "devons", "donne", 
        "telles", "toujours", "seulement", "pourra", "cependant", "plusieurs", "elles", 
-       "déjà", "très", "lorsque", "trouve", "crois", "toute", "faite", "ans", "celles"
-       "celui", "quelques", "laquelle", "faites", "tel", "etc", "devront", "chaque", "agit"
-       "mettre", "ceux", "pourront", "avant", "prendre", "aucune", "peu", "fera", "également"
-       "celles", "dessus", "devant", "beaucoup", "rue", "échevin", "echevin", "conseil"
-       "conseil_communal", "bruxelles", "propose", "agit", "puis", "place", "gouvernement"
-       "pourrait", "ailleurs", "question", "suite", "année", "avis_favorable", "bourgmestre"
-       "janvier", "février", "mars", "avril", "juin", "juillet", "août", "aout", "septembre"
-       "octobre", "décembre", "novembre", "personne", "cas", "ailleur", "dernier", "lieu", "partie"
-       "dernière", "derniere", "derniers", "dernières", "dernieres"]
+       "déjà", "très", "lorsque", "trouve", "crois", "toute", "faite", "ans", "celles",
+       "celui", "quelques", "laquelle", "faites", "tel", "etc", "devront", "chaque", "agit",
+       "mettre", "ceux", "pourront", "avant", "prendre", "aucune", "peu", "fera", "également",
+       "celles", "dessus", "devant", "beaucoup", "rue", "échevin", "echevin", "conseil",
+       "conseil_communal", "bruxelles", "propose", "agit", "puis", "place", "gouvernement",
+       "pourrait", "ailleurs", "question", "suite", "année", "avis_favorable", "bourgmestre",
+       "janvier", "février", "mars", "avril", "juin", "juillet", "août", "aout", "septembre",
+       "octobre", "décembre", "novembre", "personne", "cas", "ailleur", "dernier", "lieu", "partie",
+       "dernière", "derniere", "derniers", "dernières", "dernieres", "demande", "section", "messieurs", 
+       "actuellement", "moment", "jour"]
 sw = set(sw)
 
 
